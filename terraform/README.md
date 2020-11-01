@@ -25,7 +25,8 @@ All the parameters defined under `ec2/variables.tf`, `ecs/variables.tf`, `eks/va
 * `validation_config`, the filename of the validation configuration, which is under `validator/src/main/resources/validations` folder.
 * `sample_app_callable`, by default it's true, only set it to false when you don't have a web application sample app image.
 * `data_emitter_image`, if you have a sample app then set its image name including tag here
-* `aoc_image_repo`, if you have an AWS Otel Collector image you just built with the new component, then set its repo name here
+* `aoc_image_repo`, if you have an AWS Otel Collector image you just built with the new component, then set its repo name here.
+* `disable_soaking`, by default it's false, only set it to true when you don't want the github workflow in AWS Otel Collector doesn't perform soaking test.
 
 an example here:
 
